@@ -1,4 +1,5 @@
 using Avalonia.Controls;
+using Avalonia.Interactivity;
 
 namespace KanbanBoard.Views
 {
@@ -7,6 +8,11 @@ namespace KanbanBoard.Views
         public MainWindow()
         {
             InitializeComponent();
+        }
+        public void ShowAboutWindow(object sender, RoutedEventArgs e)
+        {
+            var dialogWindow = new AboutView();
+            dialogWindow.ShowDialog(this);
         }
     }
 }
