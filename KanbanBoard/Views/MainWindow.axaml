@@ -76,7 +76,7 @@
 									<Image Source="{Binding FilePath}"></Image>
 								</Viewbox>
 								<Button HorizontalAlignment="Stretch" Command="{Binding UploadFile}" CommandParameter="{Binding $parent[Window]}">Add Image</Button>
-								<Button HorizontalAlignment="Stretch" Command="{Binding DeleteFile}">Delete Image</Button>
+								<Button HorizontalAlignment="Stretch" Command="{Binding $parent[Window].DataContext.RemoveTask}" CommandParameter="{Binding}">Delete</Button>
 							</StackPanel>
 						</Expander>
 					</DataTemplate>
@@ -100,7 +100,7 @@
 										<Image Source="{Binding FilePath}"></Image>
 									</Viewbox>
 									<Button HorizontalAlignment="Stretch" Command="{Binding UploadFile}" CommandParameter="{Binding $parent[Window]}">Add Image</Button>
-									<Button HorizontalAlignment="Stretch" Command="{Binding DeleteFile}">Delete Image</Button>
+									<Button HorizontalAlignment="Stretch" Command="{Binding $parent[Window].DataContext.RemoveTask}" CommandParameter="{Binding}">Delete</Button>
 								</StackPanel>
 							</Expander>
 						</DataTemplate>
@@ -124,7 +124,7 @@
 										<Image Source="{Binding FilePath}"></Image>
 									</Viewbox>
 									<Button HorizontalAlignment="Stretch" Command="{Binding UploadFile}" CommandParameter="{Binding $parent[Window]}">Add Image</Button>
-									<Button HorizontalAlignment="Stretch" Command="{Binding DeleteFile}">Delete Image</Button>
+									<Button HorizontalAlignment="Stretch" Command="{Binding $parent[Window].DataContext.RemoveTask}" CommandParameter="{Binding}">Delete</Button>
 								</StackPanel>
 							</Expander>
 						</DataTemplate>

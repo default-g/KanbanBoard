@@ -79,6 +79,14 @@ namespace KanbanBoard.ViewModels
                 }
             }
         }
+
+        public void RemoveTask(Task task)
+        {
+            for(int i = 0; i < 3; i++)
+            {
+                this.Tasks[i].Remove(task);
+            }
+        }
        public void CloseWindow(Window parent)
        {
             parent.Close();
